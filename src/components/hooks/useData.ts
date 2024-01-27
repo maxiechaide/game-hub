@@ -25,8 +25,9 @@ const useData = <T>(endpoint:string) => {
           setData(res.data.results);
           setLoading(false);
         });
-    } catch (err) {
-      console.log('fallo algo');
+    } catch (error) {
+      
+      
       setLoading(false);
     }
 
